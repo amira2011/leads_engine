@@ -1,6 +1,6 @@
-class CreateLeadsEngineLeads < ActiveRecord::Migration[7.1]
+class CreateLeads < ActiveRecord::Migration[7.1]
   def change
-    create_table :leads_engine_leads do |t|
+    create_table :leads do |t|
       t.string :name
       t.string :email
 
