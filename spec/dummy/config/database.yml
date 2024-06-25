@@ -1,0 +1,28 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: abid
+  password: password
+  host: 127.0.0.1
+
+development:
+
+
+  leads:
+    <<: *default
+    database: shared_leads_development
+
+test:
+
+
+  leads:
+    <<: *default
+    database: shared_leads_test
+
+production:
+
+
+  leads:
+    <<: *default
+    database: shared_leads_production
