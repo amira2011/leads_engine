@@ -32,5 +32,15 @@ module LeadsEngine
         expect { lead.destroy }.to change { Lead.count }.by(-1)
       end
     end
+    context 'Validations' do
+      it 'is valid with valid attributes' do
+        lead = Lead.new(name: 'Valid Name', email:'john.doe@example.com')
+        expect(lead).to be_valid
+      end
+      it 'is not valid without a name' do
+        lead = Lead.new(name: nil, email: 'john.doe@example.com')
+        expect(lead).not_to be_valid
+      end
+    end
   end
 end
