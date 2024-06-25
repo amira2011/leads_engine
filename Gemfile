@@ -6,6 +6,8 @@ gemspec
 
 gem "puma"
 
+gem 'sqlite3', '~> 1.4'
+
 gem "mysql2"
 
 gem "sprockets-rails"
