@@ -2,7 +2,7 @@
 
 require_relative 'database_configuration'
 
-module FormsEngine
+module LeadsEngine
   class ApplicationConfiguration
     attr_reader :database
 

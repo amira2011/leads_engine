@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
- 
-module FormsEngine
+module LeadsEngine
   class DatabaseConfiguration
     attr_accessor :table_name_prefix
 
     def initialize
-        @table_name_prefix = ''
+      @table_name_prefix = ''
     end
   end
 end
